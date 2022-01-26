@@ -1,4 +1,3 @@
-
 FROM quay.io/lyfe00011/test:beta
 
 RUN git clone https://github.com/Zenoixnoize/GARFIELD-3.0 /root/WhatsAsenaDuplicated
