@@ -201,7 +201,7 @@
             "NO_SPRT": "Is not found or not supported",
             "DOWNLOADING_SONG": "```Garfield downloding song... 🐼```",
             "DOWNLOADING_SING": "```Garfield Uploading song... 🐼▶️```",
-            "UPLOADING_SONG": "ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ",
+            "UPLOADING_SONG": "```Garfield Uploading song... 🐼▶️```",
             "UPLOADING_SING": " ```Garfield Uploading song... 🐼▶️``` ",
             "VIDEO_DESC": "Downloads video from YouTube.",
             "NEED_VIDEO": "*Please write a video link! 🐼*\n*Example:* ```.video https://youtu.be/msiaMwYcK0c``` \n\nif .video does not work try .need",
@@ -409,7 +409,7 @@
             "FOTO_DESC": "Sends the replied photo as spam.",
             "FOTO_FOT": "```Please Reply To Any Picture!```",
             "VİD_DESC": "Sends the replied video as spam.",
-            "VİD_NEED": "ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴠɪᴅᴇᴏ!"
+            "VİD_NEED": "```Please reply the video... 🐼```"
         },
         "carbon": {
             "CARBON_DESC": "Uses carbon.sh for Text-to-Image",
