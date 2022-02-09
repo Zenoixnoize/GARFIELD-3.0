@@ -172,22 +172,22 @@
             "value": "default"
                     },
         "S_DOWN_SONG": {
-            "description": "Enter the audio download message... ශබ්ද බාගත වීමේ පණිවිඩය ඇතුලත් කරන්න",
+            "description": "Enter the audio download message...",
             "required": true,
             "value": "```Garfield downloding song... 🐼```"
         },
         "S_UP_SONG": {
-            "description": "Enter the audio upload message... ශබ්ද උඩුගත වීමේ පණිවිඩය ඇතුලත් කරන්න",
+            "description": "Enter the audio upload message...",
             "required": true,
             "value": "```Garfield Uploading song... 🐼▶️```"
         },
         "S_DOWN_VID": {
-            "description": "Enter the video download message... වීඩියෝ බාගත වීමේ පණිවිඩය ඇතුලත් කරන්න",
+            "description": "Enter the video download message...",
             "required": true,
             "value": "```Garfield Searching video... 🐼 🔎``` "
         },
         "S_UP_VID": {
-            "description": "Enter the video upload message... වීඩියෝ උඩුගත වීමේ පණිවිඩය ඇතුලත් කරන්න",
+            "description": "Enter the video upload message... ",
             "required": true,
             "value": "```Garfield Uploading video... 🐼🎬```"
         },
