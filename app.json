@@ -174,22 +174,22 @@
         "S_DOWN_SONG": {
             "description": "Enter the audio download message... ශබ්ද බාගත වීමේ පණිවිඩය ඇතුලත් කරන්න",
             "required": true,
-            "value": "_*I'm Searching your song*_ ✨➾🔎"
+            "value": "```Garfield downloding song... 🐼```"
         },
         "S_UP_SONG": {
             "description": "Enter the audio upload message... ශබ්ද උඩුගත වීමේ පණිවිඩය ඇතුලත් කරන්න",
             "required": true,
-            "value": "_*Im Uploading your song*_ ✨➾🎲"
+            "value": "```Garfield Uploading song... 🐼▶️```"
         },
         "S_DOWN_VID": {
             "description": "Enter the video download message... වීඩියෝ බාගත වීමේ පණිවිඩය ඇතුලත් කරන්න",
             "required": true,
-            "value": "_*I'm Bringing your video*_ ✨➾🔎"
+            "value": "```Garfield Searching video... 🐼 🔎``` "
         },
         "S_UP_VID": {
             "description": "Enter the video upload message... වීඩියෝ උඩුගත වීමේ පණිවිඩය ඇතුලත් කරන්න",
             "required": true,
-            "value": "_*Im Uploading your video*_ ✨➾🎲"
+            "value": "```Garfield Uploading video... 🐼🎬```"
         },
         "TAG_REPLY": {
             "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
