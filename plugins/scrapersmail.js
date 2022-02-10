@@ -951,12 +951,12 @@ else if (config.WORKTYPE == 'public') {
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
-            quality: 'highestaudio',
+            quality: 'lowestaudio',
         });
 
         got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
-            .audioBitrate(320)
+            .audioBitrate(64)
             .save('./' + title + '.mp3')
             .on('end', async () => {
                 const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
