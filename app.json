@@ -171,26 +171,7 @@
             "required": false,
             "value": "default"
                     },
-        "S_DOWN_SONG": {
-            "description": "Enter the audio download message...",
-            "required": true,
-            "value": "```Garfield downloding song... 🐼```"
-        },
-        "S_UP_SONG": {
-            "description": "Enter the audio upload message...",
-            "required": true,
-            "value": "```Garfield Uploading song... 🐼▶️```"
-        },
-        "S_DOWN_VID": {
-            "description": "Enter the video download message...",
-            "required": true,
-            "value": "```Garfield Searching video... 🐼 🔎``` "
-        },
-        "S_UP_VID": {
-            "description": "Enter the video upload message... ",
-            "required": true,
-            "value": "```Garfield Uploading video... 🐼🎬```"
-        },
+        
         "TAG_REPLY": {
             "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
             "required": false          
