@@ -328,7 +328,7 @@ if (config.WORKTYPE == 'private') {
                 return;
     
             let 
-                LANG = 'ml',
+                LANG = 'si',
                 ttsMessage = match[1],
                 SPEED = 1.0
 
@@ -363,7 +363,7 @@ if (config.WORKTYPE == 'private') {
     
         got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
-            .audioBitrate(320)
+            .audioBitrate(128)
             .save('./' + title + '.mp3')
             .on('end', async () => {
                 const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
@@ -807,7 +807,7 @@ else if (config.WORKTYPE == 'public') {
             return;
     
         let 
-            LANG = 'ml',
+            LANG = 'si',
             ttsMessage = match[1],
             SPEED = 1.0
 
@@ -842,7 +842,7 @@ else if (config.WORKTYPE == 'public') {
     
         got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
-            .audioBitrate(320)
+            .audioBitrate(128)
             .save('./' + title + '.mp3')
             .on('end', async () => {
                 const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
