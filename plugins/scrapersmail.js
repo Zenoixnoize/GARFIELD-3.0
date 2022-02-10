@@ -832,7 +832,7 @@ else if (config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
         arama = arama.all;
-        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
+        if(arama.length < 0) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
         var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
 
         let title = arama[0].title.replace(' ', '+');
@@ -840,7 +840,7 @@ else if (config.WORKTYPE == 'public') {
             quality: 'lowestaudio',
         });
     
-        got.stream(arama[1].image).pipe(fs.createWriteStream(title + '.jpg'));
+        got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
             .audioBitrate(64)
             .save('./' + title + '.mp3')
