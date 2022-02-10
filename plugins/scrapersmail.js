@@ -301,7 +301,7 @@ if (config.WORKTYPE == 'private') {
                 return;
     
             let 
-                LANG = 'ml',
+                LANG = 'si',
                 ttsMessage = match[1],
                 SPEED = 1.0
 
