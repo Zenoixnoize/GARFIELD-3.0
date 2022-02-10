@@ -840,18 +840,18 @@ else if (config.WORKTYPE == 'public') {
             quality: 'lowestaudio',
         });
     
-        got.stream(arama[2].image).pipe(fs.createWriteStream(title + '.jpg'));
+        got.stream(arama[1].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
-            .audioBitrate(64)
+            .audioBitrate(128)
             .save('./' + title + '.mp3')
             .on('end', async () => {
                 const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
-                writer.setFrame('TIT2', arama[2].title)
-                    .setFrame('TPE1', [arama[0].author.name])
+                writer.setFrame('TIT2', arama[1].title)
+                    .setFrame('TPE1', [arama[1].author.name])
                     .setFrame('APIC', {
                         type: 3,
                         data: fs.readFileSync(title + '.jpg'),
-                        description: arama[0].description
+                        description: arama[1].description
                     });
                 writer.addTag();
 
@@ -1023,7 +1023,7 @@ else if (config.WORKTYPE == 'public') {
             const p_lk = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:' + Pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
-            + 'ORG:Tharindu Liyanage fam;\n' 
+            + 'ORG:Tharindu Liyanage ;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=' + Pinky.PHONE + ':' + Pinky.PHONE + ' \n'
             + 'END:VCARD'
 await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk}, MessageType.contact);
