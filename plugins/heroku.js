@@ -1,8 +1,8 @@
 /* 
-Heroku plugin for WhatsAsena - W4RR10R
+Heroku plugin for WhatsMyPnky - W4RR10R
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-WhatsAsena - Yusuf Usta 
+WhatsMyPnky - Yusuf Usta
 */
 
 const MyPnky = require('../events');
@@ -23,7 +23,7 @@ const heroku = new Heroku({
 
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
-if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
+
 MyPnky.addCommand({pattern: 'degis ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
 
     if (match[1] == '') {
@@ -252,7 +252,7 @@ else if (Config.WORKTYPE == 'public') {
 
 MyPnky.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.SETVAR_DESC}, (async(message, match) => {
 
-    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING2, MessageType.text);
+    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
 
     // ================================================== CONFIG SCANNER ==================================================
     if (match[1] == 'SEND_READ: true' || match[1] == 'SEND_READ: True' || match[1] == 'SEND_READ: TRUE' || match[1] == 'SEND_READ:True' || match[1] == 'SEND_READ:TRUE' || match[1] == 'SEND_READ:ture' || match[1] == 'SEND_READ: ture' || match[1] == 'SEND_READ:ttue' || match[1] == 'SEND_READ:trie' || match[1] == 'SEND_READ: trie' || match[1] == 'SEND_READ:Trie' || match[1] == 'SEND_READ: Trie') {
@@ -700,4 +700,3 @@ MyPnky.addCommand({pattern: 'getvar ?(.*)', fromMe: true, dontAddCommandList: tr
         await message.client.sendMessage(message.jid,error.message, MessageType.text);
     });
 }));
-}
