@@ -840,13 +840,13 @@ else if (config.WORKTYPE == 'public') {
             quality: 'lowestaudio',
         });
     
-        got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
+        got.stream(arama[2].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
             .audioBitrate(64)
             .save('./' + title + '.mp3')
             .on('end', async () => {
                 const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
-                writer.setFrame('TIT2', arama[0].title)
+                writer.setFrame('TIT2', arama[2].title)
                     .setFrame('TPE1', [arama[0].author.name])
                     .setFrame('APIC', {
                         type: 3,
@@ -878,7 +878,7 @@ else if (config.WORKTYPE == 'public') {
         }
         var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text);
 
-        var yt = ytdl(VID, {filter: format => format.container === 'mp4' && [ '360p', '420p', '144p'].map(() => true)});
+        var yt = ytdl(VID, {filter: format => format.container === 'mp4' && [ '420p'].map(() => true)});
         yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
 
         yt.on('end', async () => {
@@ -1023,7 +1023,7 @@ else if (config.WORKTYPE == 'public') {
             const p_lk = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:' + Pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
-            + 'ORG:pinky julie fam;\n' 
+            + 'ORG:Tharindu Liyanage fam;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=' + Pinky.PHONE + ':' + Pinky.PHONE + ' \n'
             + 'END:VCARD'
 await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk}, MessageType.contact);
