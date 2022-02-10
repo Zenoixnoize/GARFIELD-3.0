@@ -840,18 +840,18 @@ else if (config.WORKTYPE == 'public') {
             quality: 'lowestaudio',
         });
     
-        got.stream(arama[1].image).pipe(fs.createWriteStream(title + '.jpg'));
+        got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
             .audioBitrate(128)
             .save('./' + title + '.mp3')
             .on('end', async () => {
                 const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
-                writer.setFrame('TIT2', arama[1].title)
-                    .setFrame('TPE1', [arama[1].author.name])
+                writer.setFrame('TIT2', arama[0].title)
+                    .setFrame('TPE1', [arama[0].author.name])
                     .setFrame('APIC', {
                         type: 3,
                         data: fs.readFileSync(title + '.jpg'),
-                        description: arama[1].description
+                        description: arama[0].description
                     });
                 writer.addTag();
 
