@@ -832,26 +832,26 @@ else if (config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
         arama = arama.all;
-        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
+        if(arama.length < 4) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
         var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
 
-        let title = arama[1].title.replace(' ', '+');
-        let stream = ytdl(arama[1].videoId, {
+        let title = arama[4].title.replace(' ', '+');
+        let stream = ytdl(arama[4].videoId, {
             quality: 'lowestaudio',
         });
     
-        got.stream(arama[1].image).pipe(fs.createWriteStream(title + '.jpg'));
+        got.stream(arama[4].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
             .audioBitrate(128)
             .save('./' + title + '.mp3')
             .on('end', async () => {
                 const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
-                writer.setFrame('TIT2', arama[0].title)
-                    .setFrame('TPE1', [arama[0].author.name])
+                writer.setFrame('TIT2', arama[4].title)
+                    .setFrame('TPE1', [arama[4].author.name])
                     .setFrame('APIC', {
                         type: 3,
-                        data: fs.readFileSync(title + '.jpg'),
-                        description: arama[0].description
+                        data: fs.readFileSync(title + '.png'),
+                        description: arama[4].description
                     });
                 writer.addTag();
 
