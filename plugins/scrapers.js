@@ -893,7 +893,7 @@ else if (config.WORKTYPE == 'public') {
             return;
     
         let 
-            LANG = 'ml',
+            LANG = 'si',
             ttsMessage = match[1],
             SPEED = 1.0
 
@@ -921,27 +921,28 @@ else if (config.WORKTYPE == 'public') {
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
         var reply = await message.client.sendMessage(message.jid,config.SONGD,MessageType.text);
 
-        let title = arama[0].title.replace(' ', '+');
-        let stream = ytdl(arama[0].videoId, {
-            quality: 'highestaudio',
+        let title = arama[1].title.replace(' ', '+');
+        let stream = ytdl(arama[1].videoId, {
+            quality: 'lowesttaudio',
         });
     
         got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
-            .audioBitrate(320)
+            .audioBitrate(128)
             .save('./' + title + '.mp3')
+            .save( title + '.jpg')
             .on('end', async () => {
                 const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
-                writer.setFrame('TIT2', arama[0].title)
-                    .setFrame('TPE1', [arama[0].author.name])
+                writer.setFrame('TIT2', arama[1].title)
+                    .setFrame('TPE1', [arama[1].author.name])
                     .setFrame('APIC', {
                         type: 3,
                         data: fs.readFileSync(title + '.jpg'),
-                        description: arama[0].description
+                        description: arama[1].description
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,config.SONGU,MessageType.text);
+                reply = await message.client.sendMessage(message.jid,config.SONGU,+ title + ,title + '.jpg',MessageType.text);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false, quoted: message.data});
             });
     }));
@@ -994,12 +995,12 @@ else if (config.WORKTYPE == 'public') {
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
-            quality: 'highestaudio',
+            quality: 'lowestaudio',
         });
     
-        got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
+        got.stream(arama[1].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
-            .audioBitrate(320)
+            .audioBitrate(64)
             .save('./' + title + '.mp3')
             .on('end', async () => {
                 const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
@@ -1033,7 +1034,7 @@ else if (config.WORKTYPE == 'public') {
     
         got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
-            .audioBitrate(320)
+            .audioBitrate(64)
             .save('./' + title + '.mp3')
             .on('end', async () => {
                 const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
