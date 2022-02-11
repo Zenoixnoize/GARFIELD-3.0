@@ -80,12 +80,3 @@ This project is protected by `GNU General Public Licence v3.0` license.
 ### Disclaimer
 `WhatsApp` name, its variations and the logo are registered trademarks of Facebook. We have nothing to do with the registered trademark
 
-
-<distributionManagement>
-   <repository>
-     <id>https://github.com/Zenoixnoize</id>
-     <name>GARFIELD+3.0</name>
-     <url>https://github.com/Zenoixnoize/Garfield-3.0</url>
-   </repository>
-</distributionManagement>
-
