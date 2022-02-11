@@ -358,7 +358,7 @@ if (config.WORKTYPE == 'private') {
 
         let title = arama[1].title.replace(' ', '+');
         let stream = ytdl(arama[1].videoId, {
-            quality: 'highestaudio',
+            quality: 'lowestaudio',
         });
     
         got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
@@ -855,7 +855,7 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,title + '* - ',MessageType.image);
+                reply = await message.client.sendMessage(Lang.UPLOADING_SONG,MessageType.text);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {quoted: message.data , mimetype: Mimetype.mp4Audio, ptt: false});
             });
     }));
