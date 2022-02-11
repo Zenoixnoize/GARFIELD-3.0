@@ -855,7 +855,7 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,title + '.jpg',MessageType.txt);
+                reply = await message.client.sendMessage(message.jid,title + title + '.jpg',MessageType.image);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {quoted: message.data , mimetype: Mimetype.mp4Audio, ptt: false});
             });
     }));
