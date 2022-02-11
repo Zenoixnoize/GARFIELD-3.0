@@ -389,7 +389,7 @@ if (config.WORKTYPE == 'private') {
             + 'ORG:A project by NOIZE;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=' + Pinky.PHONE + ':' + Pinky.PHONE + ' \n'
             + 'END:VCARD'
-await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk}, MessageType.contact);
+await message.client.sendMessage(message.jid, {displayname: "NOIZE", vcard: p_lk}, MessageType.contact);
 
   }));    
 
@@ -856,7 +856,7 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG.'TIT2'.title + '.jpg',MessageType.image);
+                reply = await message.client.sendMessage(message.jid,title + '.jpg',MessageType.image);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {quoted: message.data , mimetype: Mimetype.mp4Audio, ptt: false});
             });
     }));
