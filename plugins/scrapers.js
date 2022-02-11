@@ -843,8 +843,7 @@ else if (config.WORKTYPE == 'public') {
         got.stream(arama[1].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
             .audioBitrate(128)
-            .save('./' + title + '.mp3')
-            .save(title + '.jpg')
+            .save('./' + title + '.mp3') 
             .on('end', async () => {
                 const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
                 writer.setFrame('TIT2', arama[1].title)
@@ -856,7 +855,7 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,title + '.jpg',MessageType.image);
+                reply = await message.client.sendMessage(message.jid,'./'title.title + '.jpg',MessageType.txt);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {quoted: message.data , mimetype: Mimetype.mp4Audio, ptt: false});
             });
     }));
