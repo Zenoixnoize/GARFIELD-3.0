@@ -832,15 +832,15 @@ else if (config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
         arama = arama.all;
-        if(arama.length < 4) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
+        if(arama.length <1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
         var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
 
-        let title = arama[4].title.replace(' ', '+');
-        let stream = ytdl(arama[4].videoId, {
+        let title = arama[0].title.replace(' ', '+');
+        let stream = ytdl(arama[0].videoId, {
             quality: 'lowestaudio',
         });
     
-        got.stream(arama[4].image).pipe(fs.createWriteStream(title + '.jpg'));
+        got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
             .audioBitrate(128)
             .save('./' + title + '.mp3')
@@ -850,12 +850,12 @@ else if (config.WORKTYPE == 'public') {
                     .setFrame('TPE1', [arama[4].author.name])
                     .setFrame('APIC', {
                         type: 3,
-                        data: fs.readFileSync(title + '.png'),
-                        description: arama[4].description
+                        data: fs.readFileSync(title + '.jpg'),
+                        description: arama[0].description
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
+                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,title + '.jpg',MessageType.image);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {quoted: message.data , mimetype: Mimetype.mp4Audio, ptt: false});
             });
     }));
