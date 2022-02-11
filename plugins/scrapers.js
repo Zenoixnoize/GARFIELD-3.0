@@ -855,7 +855,7 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,config.SONGU,('./' + title  + '.png'),MessageType.text);
+                reply = await message.client.sendMessage(message.jid,config.SONGU,('```title  + author name``` + '.jpg'),MessageType.text);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {quoted: message.data , mimetype: Mimetype.mp4Audio, ptt: false});
             });
     }));
