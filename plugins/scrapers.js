@@ -856,7 +856,7 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,'```Garfield Uploading song... 🐼```' + title + title + '.jpg',MessageType.image);
+                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG.title + '.jpg',MessageType.text);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {quoted: message.data , mimetype: Mimetype.mp4Audio, ptt: false});
             });
     }));
@@ -950,14 +950,14 @@ else if (config.WORKTYPE == 'public') {
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
         var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text);
 
-        let title = arama[0].title.replace(' ', '+');
+        let title = arama[1].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
-            quality: 'highestaudio',
+            quality: 'lowestaudio',
         });
 
         got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
-            .audioBitrate(320)
+            .audioBitrate(64)
             .save('./' + title + '.mp3')
             .on('end', async () => {
                 const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
@@ -1024,10 +1024,10 @@ else if (config.WORKTYPE == 'public') {
             const p_lk = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:' + Pinky.OA_NAME + '\n' //created afnanplk, please copy this with credit..
-            + 'ORG:pinky julie fam;\n' 
+            + 'ORG:A project by Tharindu Liyanage(NOIZE);\n' 
             + 'TEL;type=CELL;type=VOICE;waid=' + Pinky.PHONE + ':' + Pinky.PHONE + ' \n'
             + 'END:VCARD'
-await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk}, MessageType.contact);
+await message.client.sendMessage(message.jid, {displayname: "NOIZE", vcard: p_lk}, MessageType.contact);
 
   }));    
 
@@ -1055,12 +1055,12 @@ await message.client.sendMessage(message.jid, {displayname: "PINKY", vcard: p_lk
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
-            quality: 'highestaudio',
+            quality: 'lowestaudio',
         });
     
         got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
-            .audioBitrate(320)
+            .audioBitrate(64)
             .save('./' + title + '.mp3')
             .on('end', async () => {
                 const writer = new ID3Writer(fs.readFileSync('./' + title + '.mp3'));
