@@ -14,7 +14,7 @@ const Lang = Language.getString('_asena');
 if (Config.STANDPLK == 'off') {
 if (Config.WORKTYPE == 'private') {
 
-    MyPnky.addCommand({pattern: 'list ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    MyPnky.addCommand({pattern: 'oldmenu ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         var CMD_HELP = '';
         if (match[1] === '') {
@@ -121,7 +121,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-     MyPnky.addCommand({pattern: 'list ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+     MyPnky.addCommand({pattern: 'oldmenu ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
         var CMD_HELP = '';
         if (match[1] === '') {
