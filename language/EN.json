@@ -18,14 +18,14 @@
             "UNOFF": "⚠️ *Attention!* \n*The plugin you have installed is not official!*",
             "INVALID_URL": "```Please enter a valid url!```",
             "INVALID_PLUGIN": "*❌ Your plugin is invalid!*\n*Error:*",
-            "INSTALLED": "*💬 Plugin has been successfully installed!*",
+            "INSTALLED": "*🐼 Plugin has been successfully installed!*",
             "PLUGIN_DESC": "Shows the plugins you have installed.",
             "INSTALLED_FROM_REMOTE": "*Plugins you install externally:*\n",
             "NO_PLUGIN": "*You have not installed any external plugins!*",
             "REMOVE_DESC": "Removes the plugin.",
             "NEED_PLUGIN": "```Please enter a Plugin! Example: .plugin __test```",
             "NOT_FOUND_PLUGIN": "```Maybe you have installed such a plugin, or maybe not. But it sure isn't right now.```",
-            "DELETED": "*💬 Module successfully deleted!*",
+            "DELETED": "*🐼 Module successfully deleted!*",
             "WARN": "Get plugins only from t.me/remasterplugin channel."
         },
         "admin": {
@@ -78,7 +78,7 @@
         },
         "heroku": {
             "RESTART_DESC": "Restart pinky",
-            "RESTART_MSG": "```ipanda Restarting coded by Tharindu Liyanage - https://www.facebook.com/zenoixnoize```",
+            "RESTART_MSG": "```Garfield Restarting coded by Tharindu Liyanage - https://www.facebook.com/zenoixnoize```",
             "SHUTDOWN_DESC": "Shutdown pinky",
             "SHUTDOWN_MSG": "```Shutting down ⛔```",
             "DYNO_DESC": "Check heroku dyno usage",
@@ -96,7 +96,7 @@
             "DELVAR_DESC": "Delete heroku config var",
             "DEL_SUCCESS": "```{} successfully deleted```",
             "NOT_FOUND": "```no results found for this key```",
-            "SUCC": "*Successfully Setted Up 💬* \n*Please wait a little while.*",
+            "SUCC": "*Successfully Setted Up 🐼* \n*Please wait a little while.*",
             "SUCC_AF": "*To restore, use* ```default```",
             "DEGİS_NONE": "```Please Enter Any Module Name!``` \n\n*.degis afk*\n*.degis alive* << **Variables** >> \n_{pp}: You only need to use it once. Adds your profile photo to the message._ \n_{info}: Shows your status._ \n_{version}: Shows the version of the bot._ \n_{plugin}: Shows the plugin channel._\n*.degis ban*\n*.degis add*\n*.degis mute*\n*.degis unmute*\n*.degis promote*\n*.degis demote*\n*.degis welcome* \n*.degis goodbye* \n*.degis kickme*\n*.degis block*\n*.degis unblock*",
             "WR": "*Please use the modules that exists!*",
@@ -109,26 +109,26 @@
             "NEED_REPLY": "*❌ Please type in reply!*\n*Example:*",
             "KICK": "you used a bad word that we dont allow here \n -admin panal",
             "KICK2": ".block these words are not allowd here",
-            "FILTERED": "*💬 Successfully set* ```{}``` *to filter!*",
+            "FILTERED": "*🐼 Successfully set* ```{}``` *to filter!*",
             "STOP_DESC": "Stops the filter you added previously.",
             "NEED_FILTER": "*❌ Please type a filter!*\n*Example:*",
             "ALREADY_NO_FILTER": "*❌ There is already no filter like this!*",
-            "DELETED": "*💬 The filter was successfully deleted!*"
+            "DELETED": "*🐼 The filter was successfully deleted!*"
         },
         "greetings": {
             "WELCOME_DESC": "It sets the welcome message. If you leave it blank it shows the welcome message.",
             "NOT_SET_WELCOME": "*You don't set the welcome message yet.!*\n**To set:** ```.welcome hi && hi#how are you? \n to add  group description in welcome message use {gpdesc} \n to add group name use {gphead} \n to add group maker name use {gpmaker} \n to add bot name use {owner} \n to add exact indian time use {time} ```",
-            "WELCOME_ALREADY_SETTED": "*💬 Welcome message already set!*\n*Message:* ```",
+            "WELCOME_ALREADY_SETTED": "*🐼 Welcome message already set!*\n*Message:* ```",
             "NEED_WELCOME_TEXT": "*You must write a message to set up the welcome message.*\n*Example:* ```.welcome hi && hi#how are you?```",
-            "WELCOME_DELETED": "*💬 Welcome message has been deleted successfully!*",
-            "WELCOME_SETTED": "*💬 Welcome message has been set successfully!*",
+            "WELCOME_DELETED": "*🐼 Welcome message has been deleted successfully!*",
+            "WELCOME_SETTED": "*🐼 Welcome message has been set successfully!*",
             "GOODBYE_DESC": "Sets the goodbye message. If you leave blank, it show's the goodbye message.",
             "PLKADMIN": ".report you are not admin \n\n 🇩​🇴​🇳​🇹​ 🇹​🇷​🇾​ 🇦​🇬​🇦​🇮​🇳​, 🇮​🇫​ 🇾​🇴​🇺​ 🇹​🇷​🇾​ 🇾​🇴​🇺​ 🇼​🇮​🇱​🇱​ 🇧​🇪​ 🇷​🇪​🇲​🇴​🇻​🇪​🇩​ 🇧​🇾​ 🇦​🇩​🇲​🇮​🇳​🇸​",
             "NOT_SET_GOODBYE": "*You didn't set a goodbye message!*\n*To set:* ```.goodbye bye && bye#see ya```",
-            "GOODBYE_ALREADY_SETTED": "*💬 Goodbye message has been set!*\n*Message:* ```",
+            "GOODBYE_ALREADY_SETTED": "*🐼 Goodbye message has been set!*\n*Message:* ```",
             "NEED_GOODBYE_TEXT": "*You must write a message to set up the goodbye message.*\n*Example:* ```.goodbye bye && bye#see ya```",
-            "GOODBYE_DELETED": "*💬 Goodbye message has been deleted successfully!*",
-            "GOODBYE_SETTED": "*💬 Goodbye message has been setted successfully!*"
+            "GOODBYE_DELETED": "*🐼 Goodbye message has been deleted successfully!*",
+            "GOODBYE_SETTED": "*🐼 Goodbye message has been setted successfully!*"
         },
         "lydia": {
             "ADDLYDIA_DESC": "Activates Lydia (AI) for the user.",
@@ -154,9 +154,9 @@
         },
         "profile": {
             "KICKME_DESC": "It kicks you from the group you are using it in.",
-            "KICKME": "```Bye bye! I am going 💬```",
+            "KICKME": "```Bye bye! I am going 🐼```",
             "PP_DESC": "Makes the profile photo what photo you reply.",
-            "NEED_PHOTO": "```Give me a photo! 💬```",
+            "NEED_PHOTO": "```Give me a photo! 🐼```",
             "PPING": "```Setting profile photo...```",
             "BLOCK_DESC": "Block user.",
             "UNBLOCK_DESC": "Unblock user.",
@@ -171,13 +171,13 @@
         },
         "removebg": {
             "REMOVEBG_DESC": "Removes the background of the photos.",
-            "NEED_PHOTO": "```Give me a photo!```",
+            "NEED_PHOTO": "*Give me a photo!*",
             "NO_API_KEY": "*You don't have an API key!*\nYou can get it here: remove.bg.",
-            "RBGING": "```ipanda Removing Background 💬❄️```"
+            "RBGING": "```Garfield Removing Background 🐼❄️```"
         },
         "scrapers": {
             "TRANSLATE_DESC": "It translates with Google Translate. You must reply any message.",
-            "TRANSLATE_USAGE": ".trt en si (From English to Sinahala)",
+            "TRANSLATE_USAGE": ".trt tr it (From Turkish to Italian)",
             "NEED_REPLY": "```Please reply to any message!```",
             "LANG": "Language",
             "FROM": "Translated Language",
@@ -192,26 +192,26 @@
             "ISONG_DESC": "Uploads the song you wrote for ios users.",
             "SONG_DESC": "Uploads the song you wrote.",
             "SING_DESC": "Sings the song you wrote.",
-            "NEED_TEXT_SONG": "```please write song name \n Example .song kuweniye ridma weerawardana  \n\n if .song doesnot work try .need```",
+            "NEED_TEXT_SONG": "```please write song name \n Ex .song nadagam geeya  \n\n if .song doesnot work try .need```",
             "NEED_TEXT_SING": "*Tell me which song to sing !*\n*Example:* ```.sing nadagam giya charitha attalage```",
             "NO_RESULT": "*I couldn't find anything :(*",
             "GET_DESC": "Instagram youtube downloader",
-            "NEED_SOME": "```Give me link 💬  \n example: .need <instagram or youtube link here>. \n\n to download youtube song (audio and Video) \n example: .need shape of you \n    or    \n.get https://www.youtube.com/watch?v=t1r_tmgQago```",
+            "NEED_SOME": "```Give me link 🐼  \n example: .get <instagram or youtube link here>. \n\n to download youtube song (audio and Video) \n example: .need shape of you \n    or    \n.need https://www.youtube.com/watch?v=t1r_tmgQago```",
             "LINK_TEXT": "The given link or text",
             "NO_SPRT": "Is not found or not supported",
-            "DOWNLOADING_SONG": "*Downloading ⬇️*",
-            "DOWNLOADING_SING": "*Downloading ⬇️*",
-            "UPLOADING_SONG": "*Uploading ⬆️*",
-            "UPLOADING_SING": "*Uploading ⬆️*",
+            "DOWNLOADING_SONG": "*𝗚𝗮𝗿𝗳𝗶𝗲𝗹𝗱 𝗦𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴 🔎*",
+            "DOWNLOADING_SING": "*𝗚𝗮𝗿𝗳𝗶𝗲𝗹𝗱 𝗦𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴 🔎*",
+            "UPLOADING_SONG": "*𝗚𝗮𝗿𝗳𝗶𝗲𝗹𝗱 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴 ☁️*",
+            "UPLOADING_SING": "*𝗚𝗮𝗿𝗳𝗶𝗲𝗹𝗱 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴 ☁️*",
             "VIDEO_DESC": "Downloads video from YouTube.",
-            "NEED_VIDEO": "*Please write a video link! 💬*\n*Example:* ```.video https://youtu.be/msiaMwYcK0c``` \n\nif .video does not work try .need",
-            "DOWNLOADING_VIDEO": "`*Downloading ⬇️*",
-            "UPLOADING_VIDEO": "*Uploading ⬆️*",
+            "NEED_VIDEO": "*Please write a video link! 🐼*\n*Example:* ```.video https://youtu.be/msiaMwYcK0c``` \n\nif .video does not work try .need",
+            "DOWNLOADING_VIDEO": "```Garfield Searching video... 🐼 🔎```",
+            "UPLOADING_VIDEO": "```Garfield Uploading video... 🐼🎬```",
             "YT_DESC": "It searchs on YouTube.",
             "NEED_WORDS": "```Please write a few words!```",
-            "GETTING_VIDEOS": "```ipanda bringing videos... 💬```",
+            "GETTING_VIDEOS": "```Garfield bringing videos... 🐼```",
             "NOT_FOUND": "```I couldn't find anything :(```",
-            "SEARCHING": "*Searching...💬*",
+            "SEARCHING": "*𝗚𝗮𝗿𝗳𝗶𝗲𝗹𝗱 𝗦𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴  🔎*",
             "WIKI_DESC": "Searches query on Wikipedia.",
             "IMG_DESC": "Searches for related pics on Google.",
             "IMG": "Uploading photo ```{}``` number ```{} ```..."
@@ -219,18 +219,18 @@
         "sticker": {
             "STICKER_DESC": "It converts your replied photo or video to sticker.",
             "NEED_REPLY": "\n*Reply to a photo or video!*\n",
-            "DOWNLOADING": "```ipanda Creating sticker... 💡 💬```"
+            "DOWNLOADING": "```Garfield Creating sticker... 💡 🐼```"
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
             "SYSD_DESC": "Shows the system properties."
-        },    
+        },
         "tagall": {
             "TAGALL_DESC": "Tags everyone in the group.",
             "ADMİN": "*I am not admin in this group!*",
             "SCAN": "Checks whether the entered number is registered on WhatApp.",
-            "NO": "*Please Enter Any Phone Number!*\n*Example:* ```.scan 94xxxx```",
-            "SUC": "*Numbered Person Uses WhatsApp! 💬*",
+            "NO": "*Please Enter Any Phone Number!*\n*Example:* ```.scan 90xxxx```",
+            "SUC": "*Numbered Person Uses WhatsApp! 🐼*",
             "UNSUC": "*Numbered Person Does Not Use WhatsApp! ❌*",
             "PLKADMIN": ".report you are not admin \n\n 🇩​🇴​🇳​🇹​ 🇹​🇷​🇾​ 🇦​🇬​🇦​🇮​🇳​, 🇮​🇫​ 🇾​🇴​🇺​ 🇹​🇷​🇾​ 🇾​🇴​🇺​ 🇼​🇮​🇱​🇱​ 🇧​🇪​ 🇷​🇪​🇲​🇴​🇻​🇪​🇩​ 🇧​🇾​ 🇦​🇩​🇲​🇮​🇳​🇸​",
             "TAGADMİN": "Tags group admins.",
@@ -242,13 +242,13 @@
         "updater": {
             "UPDATER_DESC": "Checks the update for pinky.",
             "UPDATE": "ʏᴏᴜʀ ɢᴀʀꜰɪᴇʟᴅ ɪꜱ ᴄᴏᴍᴘʟᴇᴛᴇʟʏ ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ",
-            "NEW_UPDATE": "*New update available for garfield!*\n\n ```use .alive for commands``` \n\n *ask support group before updating or your bot might stop working* \n\n https://t.me/ipanda project \n\n *-if bot stop working you will have to re-deploy* \n\n Updates are:\n\n ",
+            "NEW_UPDATE": "*New update available for garfield!*\n\n ```use .alive for commands``` \n\n *ask support group before updating or your bot might stop working* \n\n https://t.me/ipandaproject \n\n *-if bot stop working you will have to re-deploy* \n\n Updates are:\n\n ",
             "UPDATE_NOW_DESC": "It makes updates.",
-            "UPDATING": "```ipanda Updating```",
+            "UPDATING": "```Garfield Updating  to latest version      coded by Tharindu Liyanage - https://www.facebook.com/zenoixnoize```",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
-            "UPDATED": "```💬 Successfully Updated```",
-            "UPDATED_LOCAL": "```💬 Successfully Updated```",
-            "AFTER_UPDATE": "```ipanda Restarting automatically 💬 coded by Tharindu Liyanage - https://www.facebook.com/zenoixnoize```",
+            "UPDATED": "```Garfield Updated 📡 to latest version      coded by Tharindu Liyanage - https://www.facebook.com/zenoixnoize```",
+            "UPDATED_LOCAL": "*🐼 Successfully Updated!*",
+            "AFTER_UPDATE": "```Garfield Restarting coded by Tharindu Liyanage - https://www.facebook.com/zenoixnoize```",
             "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "whois": {
@@ -272,14 +272,14 @@
         },
         "weather": {
             "WEATHER_DESC": "Shows the weather.",
-            "NEED_LOCATION": "* Please write a location!*\n*Example:* ```.weather rajagiriya```",
+            "NEED_LOCATION": "* Please write a location!*\n*Example:* ```.weather Bakü```",
             "LOCATION": "Location",
             "TEMP": "Temperature",
             "DESC": "Description",
             "HUMI": "Humidity",
             "WIND": "Wind Speed",
             "CLOUD": "Cloud",
-            "NOT_FOUND": "```I couldn't find a city with this name. 💬```"
+            "NOT_FOUND": "```I couldn't find a city with this name. 🐼```"
         },
         "web": {
             "SPEEDTEST_DESC": "Measures Download and Upload speed.",
@@ -288,7 +288,7 @@
             "UPLOAD": "Upload",
             "DOWNLOAD": "Download",
             "CALC": "Performs simple math operations.",
-            "SUC": "*Calculation Done 💬*\n*Result:* ",
+            "SUC": "*Calculation Done 🐼*\n*Result:* ",
             "UNSUC": "*Calculation Failed ❌*\n*Error:* \n",
             "VALİD": "*Please Use As Applicable!* \n*.calc 1 + 2*\n*.calc 3 x 5*\n*.calc 10 / 5*\n*.calc 5 - 2*",
             "PING_DESC": "Measures your ping.",
@@ -400,7 +400,7 @@
             "SPAM_DESC": "It spam until you stop it.\n⌨️ Example: .spam test",
             "NEED_WORD": "*Need Some Words!*",
             "STOP_SPAMDESC": "Stops spam command.",
-            "STOP_SPAM": "💬 *Spam successfully stopped! Please wait a moment.*",
+            "STOP_SPAM": "🐼 *Spam successfully stopped! Please wait a moment.*",
             "ST_DESC": "Convert the replied photo or video to sticker and send it as spam.",
             "ST_ST": "```Please Don't Reply to Stciker!```\n```Only Reply to Video or Photo!```",
             "ST_NEED": "```You Must Reply To Any Video Or Photo!```",
@@ -409,7 +409,7 @@
             "FOTO_DESC": "Sends the replied photo as spam.",
             "FOTO_FOT": "```Please Reply To Any Picture!```",
             "VİD_DESC": "Sends the replied video as spam.",
-            "VİD_NEED": "```Please reply the video... 💬```"
+            "VİD_NEED": "```Please reply the video... 🐼```"
         },
         "carbon": {
             "CARBON_DESC": "Uses carbon.sh for Text-to-Image",
@@ -437,9 +437,6 @@
         },
         "wallpaper": {
             "WP": "It sends high resolution wallpapers."
-        },    
-        "threat": {
-            "THREAT": "new bot menu"
         },
         "webss": {
             "SS_DESC": "Takes a screenshot from the page in the given link.",
@@ -512,12 +509,12 @@
             "HUMI": "Humidity",
             "WIND": "Wind Speed",
             "CLOUD": "Cloud",
-            "NOT_FOUND": "```location not found 💬```",
+            "NOT_FOUND": "```location not found 🐼```",
             "QUOTE_DESC": "Gives a random quote.",
             "NEED_LOCATIONA": "*Invalid Request*",
             "QUOTE": "Quote:",
             "AUTHOR": "Author:",
-            "NOT_FOUNDA": "```Sorry,I could not find a quote. 💬```",
+            "NOT_FOUNDA": "```Sorry,I could not find a quote. 🐼```",
             "NAMEY": "Name:",
             "PUBLISHER": "Publisher",
             "MODINFO": "ModInfo",
@@ -526,7 +523,7 @@
             "MODD_DESC": "Get modded app details from MODDROID.",
             "HMODD_DESC": "Get modded app details from HappyMod.",
             "NEED_APPNAME": "*Invalid Request,Provide an app name*",
-            "NOT_FOUNDMD": "```Sorry,I could not find such an app.\n Try using .happymod if .modd is not working 💬```",
+            "NOT_FOUNDMD": "```Sorry,I could not find such an app.\n Try using .happymod if .modd is not working 🐼```",
             "CM_DESC": "Get a compliment.",
             "NOT_FOUNDAC": "*Invalid Request*",
             "CM": "Hey,",
@@ -549,7 +546,7 @@
             "RMLINK": "Read More",
             "NEWS": "News Content",
             "NEWST": "News Title",
-             "NOT_FOUND": "```oops...I couldn't find a category with this name. 💬```",
+             "NOT_FOUND": "```oops...I couldn't find a category with this name. 🐼```",
             "SONG": "Song",
             "ALBUM": "Album",
             "TITLE": "Title",
@@ -596,7 +593,7 @@
             "M_AUT": "Music Author:"
         },
         "lyrics": {
-            "LY_DESC": "ipanda will find the lyrics of the song.",
+            "LY_DESC": "Garfield will find the lyrics of the song.",
             "NEED": "\n```You Must Write Any Song!```\n",
             "SLY": "Lyrics:",
             "AUT": "Song Owner:",
