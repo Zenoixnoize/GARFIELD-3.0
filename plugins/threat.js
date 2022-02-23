@@ -7,7 +7,7 @@ const axios = require('axios');
 const Config = require('../config');
 
 const Language = require('../language');
-const Lang = Language.getString('wallpaper');
+const Lang = Language.getString('threat');
 if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
 if (Config.WORKTYPE == 'public') {
 
