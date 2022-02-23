@@ -11,7 +11,7 @@ const Lang = Language.getString('wallpaper');
 if (Config.STANDPLK == 'off' || Config.STANDPLK == 'OFF') {
 if (Config.WORKTYPE == 'public') {
 
-    MyPnky.addCommand({pattern: 'panda', fromMe: true, desc: 'iPANDA menu'}, (async (message, match) => {
+   MyPnky.addCommand({pattern: 'panda', fromMe: false, desc: Lang.THREAT}, (async (message, match) => {
 
     var r_text = new Array ();
 
