@@ -736,7 +736,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
     
-    MyPnky.addCommand({pattern: 'pink', fromMe: true,dontAddCommandList: true}, (async (message, match) => {
+    MyPnky.addCommand({pattern: 'pindhehehk', fromMe: true,dontAddCommandList: true}, (async (message, match) => {
         
     var r_text = new Array ();    
 r_text[0] = "\nEda eda, mandankonappi.. Nee enne kooduthal mandan aakkatheda\n";
@@ -779,7 +779,7 @@ await message.sendMessage(r_text[i]);
 }
 else if (Config.WORKTYPE == 'public') {
 
-    MyPnky.addCommand({pattern: 'liyanage', fromMe: false, desc:'random anime image '}, (async (message, match) => {
+    MyPnky.addCommand({pattern: 'newmenu', fromMe: false, desc:'random anime image '}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -1427,7 +1427,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
     
-    MyPnky.addCommand({pattern: 'pink', fromMe: false,dontAddCommandList: true}, (async (message, match) => {
+    MyPnky.addCommand({pattern: 'shdjdjwb', fromMe: false,dontAddCommandList: true}, (async (message, match) => {
         
     var r_text = new Array ();    
 r_text[0] = "\nEda eda, mandankonappi.. Nee enne kooduthal mandan aakkatheda\n";
