@@ -3,7 +3,7 @@
 ----
 
 <div align="center">
-  <img src="https://i.ibb.co/5TcNfYx/logo.jpg" width="200" height="200">
+  <img src="https://i.ibb.co/5TcNfYx/logo.jpg" width="400" height="400">
   <h1>🐼 GARFIELD</h1>
 </div>
 <p align="center">
