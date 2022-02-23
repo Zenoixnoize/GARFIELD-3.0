@@ -225,6 +225,9 @@
             "ALIVE_DESC": "Does bot work?",
             "SYSD_DESC": "Shows the system properties."
         },
+         "xcv": {
+            "XCV_DESC": "BOT MENU"
+        },    
         "tagall": {
             "TAGALL_DESC": "Tags everyone in the group.",
             "ADMİN": "*I am not admin in this group!*",
