@@ -78,7 +78,7 @@
          "BOT_NAME": {
             "description": "heading for .list command reply",
             "required": false,
-            "value": "????? ??????????"
+            "value": "𝗡𝗢𝗜𝗭𝗘 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥𝗦"
         },      
         "HEROKU_API_KEY": {
             "description": "Herokuda API Keyiniz. Heroku API Key.",
