@@ -134,8 +134,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
 
         console.log(
             chalk.green.bold('Garfield working ' + config.WORKTYPE + ' now 🐼'));
-            await conn.sendMessage(conn.user.jid, "GARFIELD CREATED SUCCESSFUL", MessageType.text);
-            await conn.sendMessage(conn.user.jid, "```PROGRAM WORKING            Coded and project By Tharindu Liyanage (NOIZE)" + config.WORKTYPE + "```" , MessageType.text);
+            await conn.sendMessage(conn.user.jid, "```Garfield Started```", MessageType.text);
+            await conn.sendMessage(conn.user.jid, "```PROGRAM WORKING \nCoded by Tharindu Liyanage - https://www.facebook.com/zenoixnoize \n\n" + config.WORKTYPE + "```" , MessageType.text);
     });
     
     conn.on('chat-update', async m => {
