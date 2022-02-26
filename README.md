@@ -1,43 +1,34 @@
-[No more support.](https://t.me/ipandaproject)
+# GARFIELD 6.0 🐼
+Add - A NPM Package for garfield
+<html><head><b><center>GARFIELD BOT v6.0 🐼 </center></head></b>
+  <br>
+  <br>
+  
+  
+</html>
 
-----
 
 <div align="center">
   <img src="https://i.ibb.co/5TcNfYx/logo.jpg" width="400" height="400">
-  <h1>🐼 GARFIELD</h1>
+  <h1>🐼 GARFIELD WHATSAPP BOT</h1>
 </div>
 <p align="center">
-    NOIZE project - Makes it easy and fun to use Whatsapp. Also first userbot for Whatsapp
-    <br>
-        Reserved |
-        Reserved |
-        <a href="https://t.me/ipandaproject">Telegram Channel</a> |
     <br>
 </p>
 
 ----
-![Docker Pulls](https://img.shields.io/badge/iPANDA-iPANDA%20BOT%20BY%20NOIZE-blue) !
-
-## 📢 Guide
-> [Also for support & help please come our Telegram group.](https://t.me/ipandaproject)
-
 
 ## 🔎 What is GARFIELD ?
-**iPANDA,** is a WhatsApp helper bot written by [ZENOI](https://github.com/Zenoixnoize). Does not log into your account It is written on WhatsApp Web API.
+**iPANDA,** is a WhatsApp helper bot written by [ZENOI](https://github.com/Zenoixnoize) Does not log into your account It is written on WhatsApp Web API.
+ 
+### The Method
 
-## Setup
-### Very Simple Method
-`We are working on it...`
 
-### Simple Method
-[![Run on Repl.it](https://repl.it/badge/github/Quiec/whatsasena)](https://replit.com/@zenoi/ZENOI-QR-GENERATOR?v=1)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Zenoixnoize/GARFIELD-6.0)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Zenoixnoize/GARFIELD-3.0)
 
-### The Hard Method
 ```js
-git clone https://github.com/Zenoixnoize/GARFIELD-3.0.git
-cd GARFIELD-3.0
+cd GARFIELD-6.0
 npm i
 # Config.env oluşturun ve düzenleyin. #
 # Config.env create and edit. #
@@ -65,18 +56,5 @@ By establishing the Asena, you are deemed to have accepted these responsibilitie
 ```
 
 ## DEVELOPER
-[ZENOI](https://github.com/Zenoixnoize)
 
-
-[iPANDA](https://t.me/ipandaproject) |
-Author, Base, Bug Fixes, Modules |  Bug Fixes, Modules | Bug Fixes, Modules, Idea | Modules | Modules, Idea
-
-## Thanks To -
-[Yusuf Usta](https://t.me/fusuf)
-
-## License
-This project is protected by `GNU General Public Licence v3.0` license.
-
-### Disclaimer
-`WhatsApp` name, its variations and the logo are registered trademarks of Facebook. We have nothing to do with the registered trademark
-
+<table><tr><th>Ｚ Ξ ＮＯＩ</th></tr><tr><td><a href="https://github.com/Zenoixnoize"><img src="https://i.ibb.co/mBVtxkp/Screenshot-20220218-213033.jpg" width="180"</td></tr>
