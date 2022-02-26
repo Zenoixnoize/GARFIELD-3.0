@@ -1,7 +1,7 @@
 {
-  "name": "Garfield",
-  "version": "7.3.6",
-  "description": "Garfield by NOIZE.",
+  "name": "Garfield Whatsapp bot",
+  "version": "1.0.0",
+  "description": "Garfield whatsapp bot by NOIZE Projects.",
   "main": "./ GARFIELD-3.0/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
