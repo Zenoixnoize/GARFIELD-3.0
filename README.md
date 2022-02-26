@@ -1,6 +1,6 @@
-# GARFIELD 6.0 🐼
+# GARFIELD 3.0 🐼
 Add - A NPM Package for garfield
-<html><head><b><center>GARFIELD BOT v6.0 🐼 </center></head></b>
+<html><head><b><center>GARFIELD BOT v3.0 🐼 </center></head></b>
   <br>
   <br>
   
@@ -19,16 +19,16 @@ Add - A NPM Package for garfield
 ----
 
 ## 🔎 What is GARFIELD ?
-**iPANDA,** is a WhatsApp helper bot written by [ZENOI](https://github.com/Zenoixnoize) Does not log into your account It is written on WhatsApp Web API.
+**Garfield,** is a WhatsApp helper bot written by [ZENOI](https://github.com/Zenoixnoize) Does not log into your account It is written on WhatsApp Web API.
  
 ### The Method
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Zenoixnoize/GARFIELD-6.0)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FZenoixnoize%2FGARFIELD-3.0&template=https%3A%2F%2Fgithub.com%2FZenoixnoize%2FGARFIELD-3.0)
 
 
 ```js
-cd GARFIELD-6.0
+cd GARFIELD-3.0
 npm i
 # Config.env oluşturun ve düzenleyin. #
 # Config.env create and edit. #
